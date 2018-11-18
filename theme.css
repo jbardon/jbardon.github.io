@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    margin: auto;
+    width: 50vw;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+.header__links > li {
+    display: inline;
+    margin-left: 1em;
+}
+
+/* Commons */
+.text-link {
+    line-height: 2em;
+    text-decoration: none;
+}
+
+.text-link--icon > i {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.icon {
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    background-repeat: no-repeat;
+}
+
+/* Icons */
+.ic-mail { background-image: url("/img/icons/mail.svg"); }
+.ic-print { background-image: url("/img/icons/print.svg"); }
+.ic-linkedin { background-image: url("/img/icons/linkedin.svg"); }
+.ic-medium { background-image: url("/img/icons/medium.svg"); }
