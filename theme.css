@@ -27,7 +27,7 @@ main {
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 3em;
     text-align: center;
 }
 
@@ -147,7 +147,7 @@ nav > ul {
 }
 
 .about__print-cv {
-    margin: 25px 0px;
+    margin-top: 2em;
     text-align: center;
 }
 
@@ -167,6 +167,10 @@ nav > ul {
 .about__intro {
     margin: 0 auto;
     margin-bottom: 15px;
+}
+ 
+.about__intro p {
+    margin-bottom: 1em;
 }
 
 /* Commons */
