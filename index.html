@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>A propos | Jérémy Bardon</title>
+
     <link rel="icon" href="img/icons/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="theme.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
-</head>
+    <link rel="stylesheet" type="text/css" href="theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="wrapper">
-        <header>
-            <h1 class="header__title">Jérémy Bardon</h1>
-            <h2 class="header__headline">Développeur Full-Stack</h2>
-        </header>
+      <header>
+        <h1 class="header__title">Jérémy Bardon</h1>
+        <h2 class="header__headline">Développeur Full-Stack</h2>
+      </header>
 
-        <nav>
-            <hr class="separator">
-            <ul class="ul--inline ul--no-bullets">
-                <li class="nav__link nav__link--selected"><a href="#">A propos</a></li>
-                <li class="nav__link"><a href="/blog.html">Blog</a></li>
-            </ul>
-            <hr class="separator">
-        </nav>
+      <nav>
+        <hr class="separator" />
+        <ul class="ul--inline ul--no-bullets">
+          <li class="nav__link nav__link--selected">
+            <a href="#">A propos</a>
+          </li>
+          <li class="nav__link"><a href="/blog.html">Blog</a></li>
+        </ul>
+        <hr class="separator" />
+      </nav>
 
-        <main>
-            <section>
-                <article class="about__intro text--centered">
-                    <p>Bienvenue sur mon site,</p>
-                    <p class="text--not-centered">
-                        Développeur nantais depuis plusieurs années, j'ai créé ce site pour regrouper des informations
-                        sur mon profil mais aussi les articles que j'écris.
-                    </p>
-                    <p class="text--not-centered">
-                        Autant à l'aise sur des projets front que back, j'aime relever des challenges et apprendre de
-                        nouvelles choses tous les jours.
-                        Je partage mes découvertes en écrivant des articles, la plupart sont en anglais et de nouveaux
-                        sont en préparation.
-                        N'hésitez pas à faire un tour sur le blog !
-                    </p>
-                    <p class="text--not-centered">
-                        Parlons de vous, êtes vous :
-                    </p>
-                    <ul class="text--not-centered">
-                        <li>un recruteur ? Regardez, j'ai mis un lien pour télécharger mon CV</li>
-                        <li>un développeur ? Faites un tour sur le blog et dites moi ce que vous en pensez</li>
-                    </ul>
-                </article>
-                <div class="about__print-cv">
-                    <a class="btn btn--icon" href="" target="_blank">
-                        <i class="icon ic-print"></i>Imprimez mon CV</a>
-                    <a class="btn btn--icon" href="https://www.linkedin.com/in/jeremybardon" target="_blank">
-                        <i class="icon ic-linkedin"></i>Lisez mon CV</a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <ul class="ul--inline ul--no-bullets footer__links">
-                <li><a href=""><i class="icon ic-mail"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/jeremybardon" target="_blank"><i class="icon ic-linkedin"></i></a></li>
-                <li><a href="https://medium.com/@jbardon" target="_blank"><i class="icon ic-medium"></i></a></li>
+      <main>
+        <section>
+          <article class="about__intro text--centered">
+            <p>Bienvenue sur mon site,</p>
+            <p class="text--not-centered">
+              Développeur nantais depuis plusieurs années, j'ai créé ce site
+              pour regrouper des informations sur mon profil mais aussi les
+              articles que j'écris.
+            </p>
+            <p class="text--not-centered">
+              Autant à l'aise sur des projets front que back, j'aime relever des
+              challenges et apprendre de nouvelles choses tous les jours. Je
+              partage mes découvertes en écrivant des articles, la plupart sont
+              en anglais et de nouveaux sont en préparation. N'hésitez pas à
+              faire un tour sur le blog !
+            </p>
+            <p class="text--not-centered">Parlons de vous, êtes vous :</p>
+            <ul class="text--not-centered">
+              <li>
+                un recruteur ? Regardez, j'ai mis un lien pour télécharger mon
+                CV
+              </li>
+              <li>
+                un développeur ? Faites un tour sur le blog et dites moi ce que
+                vous en pensez
+              </li>
             </ul>
-        </footer>
+          </article>
+          <div class="about__print-cv">
+            <a class="btn btn--icon" href="/CV.pdf" target="_blank">
+              <i class="icon ic-print"></i>Imprimez mon CV</a
+            >
+            <a
+              class="btn btn--icon"
+              href="https://www.linkedin.com/in/jeremybardon"
+              target="_blank"
+            >
+              <i class="icon ic-linkedin"></i>Lisez mon CV</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div id="secretPlace"></div>
+        <ul class="ul--inline ul--no-bullets footer__links">
+          <li>
+            <a id="secretLink" href="#"><i class="icon ic-mail"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jeremybardon" target="_blank"
+              ><i class="icon ic-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://medium.com/@jbardon" target="_blank"
+              ><i class="icon ic-medium"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
     </div>
-</body>
-
+  </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
