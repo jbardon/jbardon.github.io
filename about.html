@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>A propos | Jérémy Bardon</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About page">
+    <meta name="author" content="Jérémy Bardon">
+    <link rel="shortcut icon" href="favicon.ico"> 
+
+    <!-- FontAwesome JS-->
+		<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Theme CSS -->  
+		<link id="theme-style" rel="stylesheet" href="assets/css/theme-6.css">
+		<style>
+			.tech-icons {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.tech-icons > * {
+				margin-right: 25px;
+			}
+		</style>
+</head> 
+
+<body>
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Jérémy Bardon</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >			
+					
+					<div class="bio mb-3">Bonjour, je suis développeur Fullstack à Nantes. Je travaille principalement avec Angular et Spring Boot/.NET Core.<br><a href="about.html">En savoir plus</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/jeremybardon"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://medium.com/@jbardon"><i class="fab fa-medium fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/jbardon"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="index.html"><i class="fas fa-edit fa-fw mr-2"></i>Articles<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>A propos</a>
+					</li>
+				</ul>
+				
+				<div class="my-2 my-md-3">
+				    <a class="btn btn-primary" href="assets/CV.pdf" target="_blank">
+							<span class="fas fa-file-download fa-fw mr-2" aria-hidden="true"></span>Télécharger mon CV</a>
+				</div>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    	    
+	    <article class="about-section py-5">
+		    <div class="container">
+			    <h2 class="title mb-3">A propos</h2>
+					<p>Développeur nantais depuis plusieurs années, j'ai créé ce site pour regrouper des informations sur mon profil mais aussi les articles que j'écris.</p>
+					<p>Autant à l'aise sur des projets front que back, j'aime relever des challenges et apprendre de nouvelles choses tous les jours. Lors de mes expériences professionnelles, j'ai principalement travaillé avec AngularJS/Angular et Spring Boot (Java)/.NET Core (C#)</p>
+					<p class="tech-icons my-4">
+						<span style="color:#c3002f; font-size: 80px;" class="fab fa-angular fa-2x"></span>
+						<img height="70px" src="assets/images/springio-icon.svg"/>
+						<img height="70px" src="assets/images/netcore-icon.svg"/>
+					</p>
+					<p>Je partage mes découvertes en écrivant des articles, la plupart sont en anglais et de nouveaux sont en préparation. N'hésitez pas à faire un tour sur le blog !</p>
+					<p>Parlons de vous, êtes vous :</p>
+					<ul>
+						<li>un recruteur ? Regardez, j'ai mis un lien pour télécharger mon CV</li>
+						<li>un développeur ? Faites un tour sur le blog et dites moi ce que vous en pensez</li>
+					</ul>
+
+					<br/>
+
+					<div class="tech-icons my-1">
+				    <a class="btn btn-primary" href="assets/CV.pdf" target="_blank">
+							<span class="fas fa-print fa-fw mr-2" aria-hidden="true"></span>Imprimez mon CV</a>
+						<a class="btn btn-primary" href="https://www.linkedin.com/in/jeremybardon" target="_blank">
+							<span class="fab fa-linkedin-in fa-fw mr-2" aria-hidden="true"></span>Lisez mon CV</a>
+				</div>
+		    </div>
+	    </article><!--//about-section-->
+
+	    <footer class="footer text-center py-2 theme-bg-dark">
+	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>   
+</body>
+</html> 
+

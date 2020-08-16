@@ -1,98 +1,235 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en"> 
+<head>
+    <title>Blog | Jérémy Bardon</title>
 
-    <title>A propos | Jérémy Bardon</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog page">
+    <meta name="author" content="Jérémy Bardon">
+    <link rel="shortcut icon" href="favicon.ico"> 
 
-    <link rel="icon" href="img/icons/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="theme.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway"
-    />
-  </head>
+    <!-- FontAwesome JS-->
+		<script defer src="assets/fontawesome/js/all.min.js"></script>
 
-  <body>
-    <div id="wrapper">
-      <header>
-        <h1 class="header__title">Jérémy Bardon</h1>
-        <h2 class="header__headline">Développeur Full-Stack</h2>
-      </header>
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-6.css">
+</head> 
 
-      <nav>
-        <hr class="separator" />
-        <ul class="ul--inline ul--no-bullets">
-          <li class="nav__link nav__link--selected">
-            <a href="#">A propos</a>
-          </li>
-          <li class="nav__link"><a href="/blog.html">Blog</a></li>
-        </ul>
-        <hr class="separator" />
-      </nav>
+<body>
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Jérémy Bardon</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
 
-      <main>
-        <section>
-          <article class="about__intro text--centered">
-            <p>Bienvenue sur mon site,</p>
-            <p class="text--not-centered">
-              Développeur nantais depuis plusieurs années, j'ai créé ce site
-              pour regrouper des informations sur mon profil mais aussi les
-              articles que j'écris.
-            </p>
-            <p class="text--not-centered">
-              Autant à l'aise sur des projets front que back, j'aime relever des
-              challenges et apprendre de nouvelles choses tous les jours. Je
-              partage mes découvertes en écrivant des articles, la plupart sont
-              en anglais et de nouveaux sont en préparation. N'hésitez pas à
-              faire un tour sur le blog !
-            </p>
-            <p class="text--not-centered">Parlons de vous, êtes vous :</p>
-            <ul class="text--not-centered">
-              <li>
-                un recruteur ? Regardez, j'ai mis un lien pour télécharger mon
-                CV
-              </li>
-              <li>
-                un développeur ? Faites un tour sur le blog et dites moi ce que
-                vous en pensez
-              </li>
-            </ul>
-          </article>
-          <div class="about__print-cv">
-            <a class="btn btn--icon" href="/CV.pdf" target="_blank">
-              <i class="icon ic-print"></i>Imprimez mon CV</a
-            >
-            <a
-              class="btn btn--icon"
-              href="https://www.linkedin.com/in/jeremybardon"
-              target="_blank"
-            >
-              <i class="icon ic-linkedin"></i>Lisez mon CV</a
-            >
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div id="secretPlace"></div>
-        <ul class="ul--inline ul--no-bullets footer__links">
-          <li>
-            <a id="secretLink" href="#"><i class="icon ic-mail"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/jeremybardon" target="_blank"
-              ><i class="icon ic-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@jbardon" target="_blank"
-              ><i class="icon ic-medium"></i
-            ></a>
-          </li>
-        </ul>
-      </footer>
-    </div>
-  </body>
-  <script type="text/javascript" src="script.js"></script>
-</html>
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >			
+					
+					<div class="bio mb-3">Bonjour, je suis développeur Fullstack à Nantes. Je travaille principalement avec Angular et Spring Boot/.NET Core.<br><a href="about.html">En savoir plus</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/jeremybardon"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://medium.com/@jbardon"><i class="fab fa-medium fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/jbardon"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="index.html"><i class="fas fa-edit fa-fw mr-2"></i>Articles<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>A propos</a>
+					</li>
+				</ul>
+				
+				<div class="my-2 my-md-3">
+				    <a class="btn btn-primary" href="assets/CV.pdf" target="_blank">
+							<span class="fas fa-file-download fa-fw mr-2" aria-hidden="true"></span>Télécharger mon CV</a>
+				</div>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    <section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center">
+			    <h2 class="heading">Fullstack developer' blog</h2>
+			    <div class="intro">You'll find many articles about web developement, often about topics I encountered at work. Most of them are published on Medium but also on independent websites such as FreeCodeCamp and InDepth.</div>
+		    </div><!--//container-->
+	    </section>
+	    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container articles-list">
+			    <nav class="blog-nav nav nav-justified my-5">
+				  <!-- 
+						<a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+						<a class="nav-link-next nav-item nav-link rounded" href="blog-list.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a> 
+					-->
+				</nav>
+				
+		    </div>
+	    </section>
+	    
+	    <footer class="footer text-center py-2 theme-bg-dark">
+		   
+	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+		   
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+
+
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+		<script type="text/javascript">
+			(function IIFE() {
+				displayArticles();
+			})()
+
+			function displayArticles() {
+				// https://www.photoresizer.com/
+				// https://niram.org/read/
+				const articles = [
+					{
+						title: 'How to Handle Timezones and Synchronize Your Software with International Customers',
+						exerpt: 'When you develop some software you may not think about timezones at first. Unless you live in a country which has to deal with multiple time zones, such as the United States or Russia.',
+						picture: 'assets/images/blog/synchronize-software.png',
+						link: 'https://www.freecodecamp.org/news/synchronize-your-software-with-international-customers/',
+						date: 'on Apr. 2020',
+						length: '9 min'
+					}, 
+					{
+						title: 'Create your Standalone Angular Library in 10 minutes',
+						exerpt: `In this article, you'll learn how to create a library with Angular CLI. Besides, we'll explore how to publish a library and talk about dependencies linking and peer dependencies.`,
+						picture: 'assets/images/blog/create-standalone.png',
+						link: 'https://indepth.dev/create-your-standalone-angular-library-in-10-minutes/',
+						date: 'on Mar. 2020',
+						length: '7 min'
+					}, 
+					{
+						title: 'You Might Not Know JS: Insights From the JavaScript Bible',
+						exerpt: `Did you use some JavaScript to make your web app dynamic? That’s the common usage for this language, but there is far more waiting for you.`,
+						picture: 'assets/images/blog/you-might.png',
+						link: 'https://www.freecodecamp.org/news/you-might-not-know-js-insights-from-the-javascript-bible-2ee9518302aa/',
+						date: 'on Dec. 2018',
+						length: '15 min'
+					}, 
+					{
+						title: 'How to Master IntelliJ to Boost Your Productivity',
+						exerpt: `Without a doubt, the most important developer tool is the development environment. In this article, I’ll share with you all the tips and tricks I’ve gathered from my experience and from my colleagues. `,
+						picture: 'assets/images/blog/master-intellij.png',
+						link: 'https://www.freecodecamp.org/news/how-to-master-intellij-to-boost-your-productivity-44b9da20c556/',
+						date: 'on Oct. 2018',
+						length: '6 min'
+					}, 
+					{
+						title: 'The beginner’s collection of powerful tips and tricks for React',
+						exerpt: `Actually, I started to learn React a few months ago. Reading the React documentation, open source projects, and Medium articles has helped me a lot. Along the way, I’ve adopted some best practices — and I want to share with you here.`,
+						picture: 'assets/images/blog/beginner-react.png',
+						link: 'https://www.freecodecamp.org/news/the-beginners-collection-of-powerful-tips-and-tricks-for-react-f2e3833c6f12/',
+						date: 'on Aug. 2018',
+						length: '9 min'
+					}, 
+					{
+						title: 'How to Improve Your JavaScript Skills by Writing Your Own Web Development Framework',
+						exerpt: `Have you ever asked yourself how a framework works? When I discovered AngularJS after learning jQuery, AngularJS seemed like dark magic to me. In this article, I’ll show you how to write a modern JavaScript framework with custom HTML element attributes, reactivity, and double-binding.`,
+						picture: 'assets/images/blog/improve-skills.png',
+						link: 'https://www.freecodecamp.org/news/how-to-improve-your-javascript-skills-by-writing-your-own-web-development-framework-eed2226f190/',
+						date: 'on Jul. 2018',
+						length: '7 min'
+					}, 
+					{
+						title: 'Common mistakes to avoid while working with Vue.js',
+						exerpt: `Looking for a front-end framework to try out, I started with React and then tried Vue.js. In this article, I’d like to share a few common issues that you may have to deal with when working with Vue.js. Some of these issues may seem obvious, but I figured that sharing my experience might help someone.`,
+						picture: 'assets/images/blog/common-mistakes.png',
+						link: 'https://www.freecodecamp.org/news/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b/',
+						date: 'on Apr. 2018',
+						length: '6 min'
+					}, 
+					{
+						title: 'How to Bring Reactivity into React with States',
+						exerpt: `If you know how to display a React component — that’s great. Now, let’s give our components their own data. This article focuses on React’s built-in state. Note that component state and Redux are not incompatible, as their purpose is different.`,
+						picture: 'assets/images/blog/bring-reactivity.png',
+						link: 'https://www.freecodecamp.org/news/how-to-bring-reactivity-into-react-with-states-exclude-redux-solution-4827d293dfc4/',
+						date: 'on Mar. 2018',
+						length: '6 min'
+					}, 
+					{
+						title: '🇫🇷 Ajoutez plus de fonctionnel dans vos scénarios de test Cucumber',
+						exerpt: `Vous avez entendu parler de Cucumber pour créer des tests automatisés sans écrire de code ? Nous allons voir quelques bonnes pratiques pour rédiger des scénarios de tests automatisés efficaces. Pour illustrer, j’ai pris comme exemple le site Le Bon Coin qui possède un périmètre fonctionnel suffisamment vaste.`,
+						picture: 'assets/images/blog/ajoutez-fonctionnel.png',
+						link: 'https://medium.com/keepitlazy/am%C3%A9liorez-vos-sc%C3%A9narios-de-test-cucumber-dba52567c839',
+						date: 'on Feb. 2018',
+						length: '4 min'
+					}, 
+					{
+						title: 'A quick guide to learn React and how its Virtual DOM works',
+						exerpt: `Do you want to learn React without crawling the documentation (well written by the way)? You clicked on the right article. By the end, you will be able to explain these concepts: props, functional component, JSX, and Virtual DOM.`,
+						picture: 'assets/images/blog/guide-react.png',
+						link: 'https://www.freecodecamp.org/news/a-quick-guide-to-learn-react-and-how-its-virtual-dom-works-c869d788cd44/',
+						date: 'on Feb. 2018',
+						length: '5 min'
+					}, 
+					{
+						title: 'How To Reduce Enormous JavaScript Bundles Without Effort',
+						exerpt: `Your bundle is too big and you tried my trick to debug JavaScript in IntelliJ but it didn’t work. Actually, if the bundle is big enough, IntelliJ will tell your JavaScript file is too big and that’s true.`,
+						picture: 'assets/images/blog/javascript-bundle.png',
+						link: 'https://medium.com/dailyjs/how-to-reduce-enormous-javascript-bundle-without-efforts-59fe37dd4acd',
+						date: 'on Jan. 2018',
+						length: '2 min'
+					}, 
+					{
+						title: 'Stop Painful JavaScript Debug and Embrace Intellij with Source Map',
+						exerpt: `I prefer to use IntelliJ to debug JavaScript instead of using browser tools. It’s for sure much more convenient and effective. Let’s use projects bundled with Browserify and Webpack (no matter the framework).`,
+						picture: 'assets/images/blog/painful-debug.png',
+						link: 'https://medium.com/dailyjs/stop-painful-javascript-debug-and-embrace-intellij-with-source-map-6fe68eda8555',
+						date: 'on Jan. 2018',
+						length: '2 min'
+					}, 
+					{
+						title: '🇫🇷 Comment débugger efficacement votre projet AngularJS',
+						exerpt: `Lorsque l’on cherche la raison d’un bug, on choisi souvent d'afficher un message dans la console parce que c’est facile. Quand j’ai commencé à travailler sur une webapp AngularJS, je me suis dit qu’il y existait forcément une solution intégrée au framework pour faire du debug efficacement.`,
+						picture: 'assets/images/blog/debugger-angularjs.png',
+						link: 'https://medium.com/keepitlazy/utilisez-batarang-pour-d%C3%A9bugger-votre-webapp-angularjs-24b646a1e1c5',
+						date: 'on Jan. 2018',
+						length: '2 min'
+					}
+				]
+
+				const htmlArticles = articles
+					.map(article => buildArticle(article))
+					.reduce((all, article) => all + article);
+
+				const articlesList = $('.articles-list').first();
+				console.log(articlesList)
+				articlesList.prepend(htmlArticles);
+			}
+
+			function buildArticle(article) {
+				return `<div class="item mb-5">
+				    <div class="media">
+					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="${ article.picture }" alt="image">
+					    <div class="media-body">
+						    <h3 class="title mb-1"><a href="${ article.link }" target="_blank">${ article.title }</a></h3>
+						    <div class="meta mb-1"><span class="date">Published ${ article.date }</span><span class="time">${ article.length } read</span></div>
+						    <div class="intro">${ article.exerpt }</div>
+						    <a class="more-link" href="${ article.link }" target="_blank">Read more &rarr;</a>
+					    </div>
+				    </div>
+			    </div>`;
+			}
+		</script>
+
+</body>
+</html> 
+
