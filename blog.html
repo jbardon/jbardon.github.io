@@ -123,6 +123,15 @@
 				// https://niram.org/read/
 				const articles = [
 					{
+						title: '🎧 Reusing Code in Your Angular Apps',
+						exerpt: 'Podcast about my article on advanced features in Angular with Material tree. We discuss about code reusability, Angular documentation and learning curve.',
+						picture: 'assets/images/blog/reuse-code-angular.png',
+						link: 'https://devchat.tv/adv-in-angular/reusing-code-in-your-angular-apps-ft-jeremy-bardon-aia-319/',
+						date: 'on Jul. 2021',
+						length: '46 min',
+						type: 'podcast'
+					},
+					{
 						title: 'Craft a complete GitLab pipeline for Angular. Part 2',
 						exerpt: 'Learn Gitlab to build a CI/CD pipeline for Angular apps and libraries. This second article focuses on deployment using two methods involving GitLab Registries and Pages. You\'ll also find docker jobs optimization tips using custom images.',
 						picture: 'assets/images/blog/angular-gitlab-pipeline-2.png',
@@ -269,12 +278,13 @@
 			}
 
 			function buildArticle(article) {
+				const consumeMethod = article?.type === 'podcast' ? 'listen' : 'read';
 				return `<div class="item mb-5">
 				    <div class="media">
 					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="${ article.picture }" alt="image">
 					    <div class="media-body">
 						    <h3 class="title mb-1"><a href="${ article.link }" target="_blank">${ article.title }</a></h3>
-						    <div class="meta mb-1"><span class="date">Published ${ article.date }</span><span class="time">${ article.length } read</span></div>
+						    <div class="meta mb-1"><span class="date">Published ${ article.date }</span><span class="time">${ article.length } ${ consumeMethod }</span></div>
 						    <div class="intro">${ article.exerpt }</div>
 						    <a class="more-link" href="${ article.link }" target="_blank">Read more &rarr;</a>
 					    </div>
